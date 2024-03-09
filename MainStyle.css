@@ -1,0 +1,341 @@
+:root {
+
+    /* Gradient Scales */
+    --gradient: linear-gradient(
+        45deg,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+    --OceanBlueGradient: linear-gradient(
+        45deg,
+        #2E3192,
+        #1BFFFF
+    );
+    --EternalConstanceGradient: linear-gradient(
+        45deg,
+        #09203F,
+        #537895
+    );
+
+    /* Main Color Theme - Dark */
+    --BackgroundIntro: linear-gradient(rgba(0,0,0,0.8),#fff);
+    --BackgroundBody: rgba(0,0,0,0.8);
+    --BackgroundColorNavContainer: rgba(0,0,0,0.8);
+    --LinkColor: #fff;
+    --BackgroundColorLeftColumnLayoutContainer: rgba(0,0,0,0.8);
+    --BackgroundCode: rgba(0,0,0,0.9);
+}
+
+body {
+    margin: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    /*
+    background-image: var(--OceanBlueGradient);
+    background-size: 1000%;
+    animation: bg-animation 20s infinite alternate;
+    */
+    background-color: var(--BackgroundBody);
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+/* Opposite Color Theme - White */
+.White {
+    --BackgroundIntro: linear-gradient(180deg,rgba(255,255,255,0.1),#f6f6f6);
+    --BackgroundBody: rgba(255,255,255,0.1);
+    --BackgroundColorNavContainer: rgba(255,255,255,0.98);
+    --LinkColor: #000;
+    --BackgroundColorLeftColumnLayoutContainer: rgb(232 232 232 / 80%);
+    --BackgroundCode: #f5f5f5;
+    color: #000;
+}
+
+div.building-content {
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text Decoration */
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.3rem;
+}
+a {
+    color: var(--LinkColor);
+    text-decoration: none;
+}
+a.left-to-right::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(254, 179, 38);
+    transition: width .3s;
+}
+a.left-to-right:hover::after {
+    width: 100%;
+}
+a.change-color:hover {
+    color:rgb(254, 179, 38);
+}
+
+.colorfull-1 {
+    color:rgb(254, 179, 38);
+}
+
+/* Buttons */
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+button.unfilled {
+    color: rgb(254, 179, 38);
+    background-color: transparent;
+    border: 2px solid rgb(254, 179, 38);
+}
+button.unfilled:hover {
+    color: #000;
+    background-color: rgb(254, 179, 38);
+}
+button.filled {
+    color: #000;
+    background-color: rgb(254, 179, 38);
+    border: 2px solid rgb(254, 179, 38);
+}
+
+@media (any-pointer: coarse) {
+    h1 {
+        font-size: 3.5rem
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ------------- HEADER ------------- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.nav-container {
+    padding: 20px;
+    background-color: var(--BackgroundColorNavContainer);
+    display:flex;
+    align-items: center;
+}
+.nav-logo {
+    width: 25%;
+    font-size: 30px;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    align-items: center;
+}
+.nav-menu-mobile, .div-menu-mobile {
+    display: none;
+}
+.toggle-colortheme-icon:hover {
+    cursor: pointer;
+}
+
+@media (any-pointer: coarse) {
+    .nav-container {
+        justify-content: space-between;
+    }
+    .nav-logo {
+        width: 80%;
+        font-size: 20px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-menu-mobile {
+        display: flex;
+        justify-content: right;
+        width: 35%;
+    }
+    .div-menu-mobile {
+        display: none;
+        background-color: var(--BackgroundColorNavContainer);
+        position: fixed;
+        right: 0;
+        width: 47%;
+        top: 0;
+        height: 100%;
+        padding-top: 20%;
+    }
+    .div-menu-mobile ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        line-height: 52px;
+        font-size: 18px;
+    }
+}
+
+/* ------------- MAIN ------------- */
+
+div.light {
+    background-color: #fff;
+    color: #000;
+}
+div.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+/* MAIN */
+.main-containers {
+    display: flex;
+    flex-direction: column;
+}
+.main-blocks {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.title-main-blocks {
+    font-size: 2rem;
+}
+
+/* INTRO */
+.intro-container {
+    display: flex;
+    padding: 20px;
+    background: var(--BackgroundIntro);
+}
+.intro-container-item {
+    font-family: CentraNube,system-ui,BlinkMacSystemFont,Helvetica Neue,arial,sans-serif;
+    /*width: 50%;*/
+}
+.intro-container .MainTitle {
+    margin: 50px;
+    font-size: 6.4vw;
+}
+
+.intro-container .MainTitle-container .SubMainTitle {
+    font-size: 1.2vw;
+}
+.intro-container .intro-container-item .MainTitle-container {
+    padding: 15vh 0px 15vh 0px;
+}
+@media (any-pointer: coarse) {
+    .intro-container {
+        flex-direction: column;
+    }
+    .intro-container .MainTitle {
+        margin: 0px;
+        font-size: 19vw;
+    }
+    .intro-container .MainTitle-container .SubMainTitle {
+        font-size: 4.2vw;
+    }
+}
+
+/* ------------- FOOTER ------------- */
+.footer-container {
+    padding: 20px;
+}
+
+
+/* ------------- CSS SNIPPETS PAGE ------------- */
+.two-columns-layout-container {
+    display: flex;
+}
+.left-column-layout {
+    display: flex;
+    width: 16%;
+    padding: 20px 0px 20px 20px;
+    box-sizing: border-box;
+    height: 90vh;
+    background-color: var(--BackgroundColorLeftColumnLayoutContainer);
+}
+.right-column-layout {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.left-column-layout ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.left-column-layout ul li {
+    margin-bottom: 45px;
+}
+
+/* ------------- Exec-Code ------------- */
+.exec-code-container {
+    display: flex;
+    background-color: #bebebe;
+    margin: 20px 0;
+    padding: 20px;
+}
+.exec-container,
+.code-container {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+.exec-background {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.code-background {
+    background-color: var(--BackgroundCode);
+    width: 100%;
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    color: #00c400;
+}
+button.copy-code {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    background-color: transparent;
+    color: #565656;
+    border: 2px solid #565656;
+}
+button.copy-code:hover {
+    color: #747474;
+    border: 2px solid #747474;
+}
+div.buttons-code-container {
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    right: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.Displayed-container {
+    display: block;
+}
+.NonDisplayed-container {
+    display: none;
+}
