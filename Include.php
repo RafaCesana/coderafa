@@ -16,6 +16,7 @@
         EOT;
     }
 
+    // Grid Theory: Used to support the arrangement of each element
     function GridSystem() {
         echo <<< EOT
             <div class="grid-container">
