@@ -16,17 +16,6 @@
         ?>
 
         <main>
-            <!-- Only on mobile -->
-            <div class="div-menu-mobile" id="div-menu-mobile">
-                <ul>
-                    <a href=""><li>About Me</li></a>
-                    <a href=""><li>CSS</li></a>
-                    <a href=""><li>JS</li></a>
-                    <a href=""><li>PHP</li></a>
-                    <a href=""><li>Contact</li></a>
-                    <a onclick="ToggleColorTheme();" id="toggle-colortheme-icon"><li><i style="font-size:24px;" class="fa-solid fa-toggle-off"></i></li></a>
-                </ul>
-            </div>
             
             <div class="main-containers">
                 <div>

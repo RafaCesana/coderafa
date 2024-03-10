@@ -56,6 +56,17 @@
                         <a onclick="ToggleOpenCloseDiv('div-menu-mobile','toggle-menu-icon','fa-solid fa-bars','fa-solid fa-x','font-size:24px;');" id="toggle-menu-icon"><i style="font-size:24px;" class="fa-solid fa-bars"></i></a>
                     </div>
 
+                    <div class="div-menu-mobile" id="div-menu-mobile">
+                        <ul>
+                            <a href=""><li>About Me</li></a>
+                            <a href="CSS.php?p=Switches"><li>CSS</li></a>
+                            <a href=""><li>JS</li></a>
+                            <a href=""><li>PHP</li></a>
+                            <a href=""><li>Contact</li></a>
+                            <a onclick="ToggleColorTheme();" id="toggle-colortheme-icon"><li><i style="font-size:24px;" class="fa-solid fa-toggle-off"></i></li></a>
+                        </ul>
+                    </div>
+
                 </div>
             </header>
         EOT;
