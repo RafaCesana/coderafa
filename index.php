@@ -16,7 +16,7 @@
         ?>
 
         <main>
-            
+
             <div class="main-containers">
                 <div>
                     <div class="intro-container">
@@ -46,8 +46,8 @@
                         <p>CSS list projects</p>
                     </div>
                     <div>
-                        <h2 class="title-main-blocks colorfull-1">CSS Application</h2>
-                        <p>Different CSS application</p>
+                        <h2 class="title-main-blocks colorfull-1">CSS Tricks</h2>
+                        <p>Different CSS tricks</p>
                     </div>
                 </div>
                 <div class="main-blocks light">

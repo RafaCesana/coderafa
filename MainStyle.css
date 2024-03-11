@@ -88,7 +88,11 @@ a.left-to-right::after {
 a.left-to-right:hover::after {
     width: 100%;
 }
-a.change-color:hover {
+
+a.link-not-selected:hover {
+    color:rgb(254, 179, 38);
+}
+a.link-selected {
     color:rgb(254, 179, 38);
 }
 
@@ -319,7 +323,7 @@ div.dark {
     display: flex;
     background-color: #bebebe;
     margin: 20px 0;
-    box-shadow: 60px -16px #a5a692;
+    box-shadow: 60px -16px #444;
 }
 .exec-container,
 .code-container {

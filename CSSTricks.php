@@ -18,11 +18,12 @@
         <div class="two-columns-layout-container">
             <div class="left-column-layout">
                 <ul>
-                    <a class="change-color" href="/CSS.php?p=Switches"><li>Toggle Switches</li></a>
-                    <a class="change-color" href="/CSS.php?p=Spinners"><li>Loading Spinners</li></a>
-                    <a class="change-color" href="/CSS.php?p=AnimatedText"><li>Animated Text on Hover</li></a>
-                    <a class="change-color" href="/CSS.php?p=FloatingImage"><li>Floating Image</li></a>
-                    <a class="change-color" href="/CSS.php?p=Bootstrap"><li>Bootstrap Application</li></a>
+                    <a class="link-selected" href="/CSSTricks.php"><li>Home</li></a>
+                    <a class="link-not-selected" href="/CSSTricks.php?p=Switches"><li>Toggle Switches</li></a>
+                    <a class="link-not-selected" href="/CSSTricks.php?p=Spinners"><li>Loading Spinners</li></a>
+                    <a class="link-not-selected" href="/CSSTricks.php?p=AnimatedText"><li>Animated Text on Hover</li></a>
+                    <a class="link-not-selected" href="/CSSTricks.php?p=FloatingImage"><li>Floating Image</li></a>
+                    <a class="link-not-selected" href="/CSSTricks.php?p=Bootstrap"><li>Bootstrap Application</li></a>
                 </ul>
             </div>
             <div class="right-column-layout">

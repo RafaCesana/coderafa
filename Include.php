@@ -44,7 +44,7 @@
                     <div class="nav-logo"><a href="/">< CODERAFA /></a></div>
                     <div class="nav-links">
                         <div><a class="left-to-right" href="">ABOUT ME</a></div>
-                        <div><a class="left-to-right" href="CSS.php?p=Switches">CSS SNIPPETS</a></div>
+                        <div><a class="left-to-right" href="CSSTricks.php">CSS TRICKS</a></div>
                         <div><a class="left-to-right" href="">JS SNIPPETS</a></div>
                         <div><a class="left-to-right" href="">PHP APPLICATION</a></div>
                         <div><a class="left-to-right" href="">CONTACT</a></div>
