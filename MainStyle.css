@@ -262,6 +262,7 @@ div.dark {
 /* ------------- LAYOUTS PAGE ------------- */
 .two-columns-layout-container {
     display: flex;
+    flex-direction: row-reverse;
 }
 .left-column-layout {
     display: flex;
