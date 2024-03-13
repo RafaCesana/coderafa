@@ -315,7 +315,7 @@ div.dark {
     }
     .right-column-layout {
         width: 100%;
-        padding: 80px 10px 80px 10px;
+        padding: 100px 10px 100px 10px;
     }
 }
 
@@ -326,7 +326,7 @@ div.dark {
     background-color: #bebebe;
     margin: 20px 0;
     box-shadow: 60px -16px #444;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px 8px 0px 8px;
 }
 .exec-container,
 .code-container {
@@ -353,6 +353,7 @@ div.dark {
     max-height: 300px;
     overflow-y: auto;
     color: #00c400;
+    border-radius: 0px 8px 8px 0px;
 }
 button.copy-code {
     position: absolute;
@@ -396,3 +397,28 @@ div.buttons-code-container {
 .NonDisplayed-container {
     display: none;
 }
+
+/* ------------- About Me ------------- */
+.aboutme-layout {
+    background-color: #bebebe;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.aboutme-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    color: #000;
+    gap: 30px;
+}
+.aboutme-right {
+    background-color: #fff;
+    box-shadow: 60px -16px #444;
+    border-radius: 8px;
+}
+.aboutme-left {
+    background-color: #fff;
+    box-shadow: -60px -16px #444;
+    border-radius: 8px;
+}
+

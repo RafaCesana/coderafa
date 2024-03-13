@@ -43,7 +43,7 @@
                 <div class="nav-container">
                     <div class="nav-logo"><a href="/">< CODERAFA /></a></div>
                     <div class="nav-links">
-                        <div><a class="left-to-right" href="">ABOUT ME</a></div>
+                        <div><a class="left-to-right" href="AboutMe.php">ABOUT ME</a></div>
                         <div><a class="left-to-right" href="CSSTricks.php">CSS TRICKS</a></div>
                         <div><a class="left-to-right" href="">JS SNIPPETS</a></div>
                         <div><a class="left-to-right" href="">PHP APPLICATION</a></div>
@@ -59,7 +59,7 @@
                     <div class="div-menu-mobile" id="div-menu-mobile">
                         <ul>
                             <a href=""><li>About Me</li></a>
-                            <a href="CSS.php?p=Switches"><li>CSS</li></a>
+                            <a href="CSSTricks.php"><li>CSS</li></a>
                             <a href=""><li>JS</li></a>
                             <a href=""><li>PHP</li></a>
                             <a href=""><li>Contact</li></a>
