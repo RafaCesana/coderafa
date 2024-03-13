@@ -58,7 +58,7 @@
 
                     <div class="div-menu-mobile" id="div-menu-mobile">
                         <ul>
-                            <a href=""><li>About Me</li></a>
+                            <a href="AboutMe.php"><li>About Me</li></a>
                             <a href="CSSTricks.php"><li>CSS</li></a>
                             <a href=""><li>JS</li></a>
                             <a href=""><li>PHP</li></a>
