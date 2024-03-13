@@ -1,0 +1,55 @@
+.loader0 {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.loader1 {
+    width: 48px;
+  height: 12px;
+  background: #000;
+  margin-top: 40px;
+  position: relative;
+}
+.loader1::after {
+    content: '';
+    border: 15px solid transparent;
+    border-top-color: #000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    animation: bounce 0.4s ease-in-out infinite alternate;
+  }
+  .loader1::before {
+    content: '';
+    width: 15px;
+    height: 20px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 25px;
+    animation: bounce 0.4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translate(-50%, 5px);
+    }
+    100% {
+      transform: translate(-50%, -5px);
+    }
+  }

@@ -90,7 +90,7 @@
 
         $QtyButtons = count($aTecName);
         $Padding    = 10;
-        $ClassName  = 'filled';
+        $ClassName  = 'unfilled';
         $ContainersIDsConcat = implode(',', $aContainersIDs);
 
         if($QtyButtons==1) {
@@ -98,10 +98,11 @@
         }
 
         $R = '<div class="buttons-code-container">';
+        $LastButton = $QtyButtons-1;
         for($i=0 ; $i<$QtyButtons ; $i++) {
 
-            if($i>0) {
-                $ClassName = 'unfilled';
+            if($i==$LastButton) {
+                $ClassName = 'filled';
             }
 
             $R .= '<div style="padding-left:'.$Padding.'px;"><button id="button-'.$aContainersIDs[$i].'" onclick="ChangeCode(this.id , \''.$ContainersIDsConcat.'\');" class="'.$ClassName.'">'.$aTecName[$i].'</button></div>';
@@ -126,10 +127,11 @@
                     <div class="code-background" id="CodeContainer">
         EOT;
 
-        // Code implementation part     
+        // Code implementation part   
+        $LastTec = count($aTecName)-1;
         for($i=0 ; $i<count($aTecName) ; $i++) {
 
-            if($i==0) {
+            if($i==$LastTec) {
                 $ClassName = 'Displayed-container';
             }
             else {
