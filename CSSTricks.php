@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 
-        <title>CSS Tricks</title>
+        <title>CSS Tricks | CodeRafa</title>
         <link rel="stylesheet" href="CSSTricksStyle.css">
 
         <?php
@@ -19,7 +19,7 @@
             // Links selection on left-column-layout
             $HomeClassLink              = "link-not-selected";
             $ToggleSwitchesClassLink    = "link-not-selected";
-            $LoadingSpinnersClassLink   = "link-not-selected";
+            $LoadingClassLink           = "link-not-selected";
             $AnimatedTextClassLink      = "link-not-selected";
             $FloatingImageClassLink     = "link-not-selected";
             $BoostrapClassLink          = "link-not-selected";
@@ -34,6 +34,7 @@
             if($p=='') {
                 $HomeClassLink = "link-selected";
                 echo <<< EOT
+                    <h1>CSS TRICKS <i style="color:#2965f1;" class="fa-brands fa-css3-alt"></i></h1>
                     <p>This page CSS tricks contains a compilation of tests using Cascading Style Sheets(CSS) to improve design and layout of web pages, being enable to apply the basics and to create more complex responsive web applications.</p>
                 EOT;
             }

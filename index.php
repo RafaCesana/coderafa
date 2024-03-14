@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 
-        <title>coderafa</title>
+        <title>CodeRafa</title>
 
         <?php
             include 'Include.php';
@@ -34,7 +34,7 @@
                 </div>
                 <div class="main-blocks light">
                     <div>
-                        <h2 class="title-main-blocks colorfull-1">FIXER API</h2>
+                        <h2 class="colorfull-1">FIXER API</h2>
                         <p>Foreign exchange rates and currency conversion JSON API</p>
                     </div>
                     <div>
@@ -46,13 +46,13 @@
                         <p>CSS list projects</p>
                     </div>
                     <div>
-                        <h2 class="title-main-blocks colorfull-1">CSS Tricks</h2>
+                        <h2 class="colorfull-1">CSS Tricks</h2>
                         <p>Different CSS tricks</p>
                     </div>
                 </div>
                 <div class="main-blocks light">
                     <div>
-                        <h2 class="title-main-blocks colorfull-1">FILE.IO API</h2>
+                        <h2 class="colorfull-1">FILE.IO API</h2>
                         <p>Super simple file sharing!</p>
                     </div>
                     <div>
@@ -64,7 +64,7 @@
                         <p>JS list projects</p>
                     </div>
                     <div>
-                        <h2 class="title-main-blocks colorfull-1">JS Application</h2>
+                        <h2 class="colorfull-1">JS Application</h2>
                         <p>Different JS application</p>
                     </div>
                 </div>
