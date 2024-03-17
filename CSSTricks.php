@@ -35,7 +35,7 @@
                 $HomeClassLink = "link-selected";
                 echo <<< EOT
                     <h1>CSS TRICKS <i style="color:#2965f1;" class="fa-brands fa-css3-alt"></i></h1>
-                    <p>This page CSS tricks contains a compilation of tests using Cascading Style Sheets(CSS) to improve design and layout of web pages, being enable to apply the basics and to create more complex responsive web applications.</p>
+                    <p class="DefaultText">&emsp;This page CSS tricks contains a compilation of tests using Cascading Style Sheets(CSS) to improve design and layout of web pages, being enable to apply the basics and to create more complex responsive web applications.</p>
                 EOT;
             }
             if($p=='Switches') {

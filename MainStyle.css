@@ -30,6 +30,7 @@
     --BackgroundCode: rgba(0,0,0,0.9);
     --BackgroundGeneral: rgba(0,0,0,0.8);
     --StandardBackground: #373737;
+    --DefaultTextColor: #b6b6b6;
 }
 
 body {
@@ -59,6 +60,7 @@ body {
     --BackgroundCode: #f5f5f5;
     --BackgroundGeneral: #fff;
     --StandardBackground: #dedede;
+    --DefaultTextColor: #6f6f6f;
 
     color: #000;
 }
@@ -107,6 +109,12 @@ a.link-selected {
 .colorfull-1 {
     color:rgb(254, 179, 38);
 }
+p.DefaultText {
+    font-size: 18px;
+    color: var(--DefaultTextColor);
+    line-height: 28px;
+    text-align: justify;
+}
 
 /* Buttons */
 button {
@@ -127,15 +135,6 @@ button.filled {
     color: #000;
     background-color: rgb(254, 179, 38);
     border: 2px solid rgb(254, 179, 38);
-}
-
-@media (any-pointer: coarse) {
-    h1 {
-        font-size: 3.5rem
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
 }
 
 /* ------------- HEADER ------------- */
@@ -413,7 +412,6 @@ div.buttons-code-container {
     flex-direction: column;
     padding: 20px 0;
     gap: 30px;
-    align-items: center;
 }
 .about-right {
     background-color: var(--BackgroundGeneral);
@@ -430,5 +428,35 @@ div.buttons-code-container {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.double-about-layout {
+    display: flex;
+    justify-content: center;
+}
+.double-about-layout .text-part {
+    width: 50%;
+}
+.double-about-layout .img-part {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.double-about-layout .img-part .img {
+    width: 400px;
+}
+@media (any-pointer: coarse) {
+    .about-layout {
+        padding: 20px;
+    }
+    .double-about-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .double-about-layout .text-part {
+        width: 100%;
+    }
+    .double-about-layout .img-part .img {
+        width: 300px;
+    }
 }
 
