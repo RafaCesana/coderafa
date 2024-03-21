@@ -16,7 +16,6 @@
         ?>
 
         <main>
-
             <div class="main-containers">
                 <div>
                     <div class="intro-container">
@@ -34,11 +33,11 @@
                 </div>
                 <div class="main-blocks light">
                     <div>
-                        <h2 class="colorfull-1">FIXER API</h2>
-                        <p>Foreign exchange rates and currency conversion JSON API</p>
+                        <h2 class="colorfull-1">Geocoding API</h2>
+                        <p>from OpenWheater</p>
                     </div>
                     <div>
-                        currency conversion from API
+                        api response
                     </div>
                 </div>
                 <div class="main-blocks dark">

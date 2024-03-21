@@ -106,6 +106,13 @@ a.link-selected {
     color:rgb(254, 179, 38);
 }
 
+a.on-text {
+    color: rgb(254, 179, 38);
+}
+a.on-text:hover {
+    text-decoration: underline;
+}
+
 .colorfull-1 {
     color:rgb(254, 179, 38);
 }
@@ -136,6 +143,37 @@ button.filled {
     background-color: rgb(254, 179, 38);
     border: 2px solid rgb(254, 179, 38);
 }
+
+/* Input */
+input[type=submit] {
+    background-color: rgb(254, 179, 38);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: rgb(236, 168, 39);
+}
+
+select {
+    padding: 5px 5px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0px 20px 0px;
+    border: 1px solid #dcdcdc;
+}
+table, td, th {
+    border: 1px solid #dcdcdc;
+  }
 
 /* ------------- HEADER ------------- */
 header {
@@ -292,6 +330,20 @@ div.dark {
 }
 .left-column-layout ul li {
     margin-bottom: 45px;
+}
+
+.default-layout-container {
+    margin: 20px 0;
+    box-shadow: 60px -16px #737373;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 0px 20px 0px 20px;
+}
+.default-layout-container p {
+    color: #6f6f6f;
+}
+.default-layout-container h2 {
+    color: #000;
 }
 
 @media (any-pointer: coarse) {

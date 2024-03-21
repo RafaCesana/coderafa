@@ -46,8 +46,8 @@
                     <div class="nav-links">
                         <div><a class="left-to-right" href="About.php">ABOUT</a></div>
                         <div><a class="left-to-right" href="CSSTricks.php">CSS TRICKS</a></div>
-                        <div><a class="left-to-right" href="">JS SNIPPETS</a></div>
-                        <div><a class="left-to-right" href="">PHP APPLICATION</a></div>
+                        <div><a class="left-to-right" href="">JAVASCRIPT</a></div>
+                        <div><a class="left-to-right" href="PHP.php">PHP</a></div>
                         <div><a class="left-to-right" href="">CONTACT</a></div>
                         <div><a onclick="ToggleColorTheme();" id="toggle-colortheme-icon" class="toggle-colortheme-icon"><i style="font-size:24px;" class="fa-solid fa-toggle-off"></i></a></div>
                     </div>
