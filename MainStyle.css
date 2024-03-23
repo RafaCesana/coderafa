@@ -275,7 +275,7 @@ div.dark {
 }
 .intro-container .MainTitle {
     margin: 50px;
-    font-size: 6.4vw;
+    font-size: 9.4vw;
 }
 
 .intro-container .MainTitle-container .SubMainTitle {
@@ -335,7 +335,7 @@ div.dark {
 .default-layout-container {
     margin: 20px 0;
     box-shadow: 60px -16px #737373;
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: #fff;
     padding: 0px 20px 0px 20px;
 }
@@ -381,7 +381,7 @@ div.dark {
     display: flex;
     margin: 20px 0;
     box-shadow: 60px -16px #737373;
-    border-radius: 8px 8px 0px 8px;
+    border-radius: 4px 4px 0px 4px;
 }
 .exec-container,
 .code-container {
@@ -396,7 +396,7 @@ div.dark {
     padding: 20px;
     max-height: 300px;
     overflow-y: auto;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 4px 0px 0px 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,7 +408,7 @@ div.dark {
     max-height: 300px;
     overflow-y: auto;
     color: #00c400;
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 4px 4px 0px;
 }
 button.copy-code {
     position: absolute;
@@ -468,7 +468,7 @@ div.buttons-code-container {
 .about-right {
     background-color: var(--BackgroundGeneral);
     box-shadow: 60px -16px #737373;
-    border-radius: 8px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -476,7 +476,7 @@ div.buttons-code-container {
 .about-left {
     background-color: var(--BackgroundGeneral);
     box-shadow: -60px -16px #737373;
-    border-radius: 8px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     flex-direction: column;

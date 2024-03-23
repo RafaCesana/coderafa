@@ -21,8 +21,9 @@
                     <div class="intro-container">
                         <div class="intro-container-item">
                             <div class="MainTitle-container">
-                                <span class="SubMainTitle">Hi! I am Rafa</span>
-                                <h1 class="MainTitle">Web Developer</h1>
+                                <span class="SubMainTitle">RAFAEL CESANA</span>
+                                <h1 class="MainTitle" style="margin-bottom:0;">WEB</h1>
+                                <h1 class="MainTitle" style="margin-top:0;"><span style="text-decoration:underline; text-decoration-color: rgb(254, 179, 38);">DEV</span>ELOPER</h1>
                                 <span class="SubMainTitle">You are at the website where I apply some of my knowledge</br>
                                 Be welcome to explore!</span>
                             </div>
