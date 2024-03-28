@@ -82,7 +82,7 @@
                 $aCode = array($HtmlCode, $CSSCode);
                 $aContainersIDs = array('html-loading-0', 'css-loading-0');
 
-                GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode);
+                GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, 'vertical');
 
 
                 // ---------- Exec-Code Block 2 ------------ //
@@ -139,7 +139,7 @@
                 $aCode = array($HtmlCode, $CSSCode);
                 $aContainersIDs = array('html-loading-1', 'css-loading-1');
 
-                GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode);
+                GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, 'vertical');
             }
 
             if($p=='AnimatedText') {

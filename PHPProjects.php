@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 
-        <title>PHP | CodeRafa</title>
+        <title>PHP Projects | CodeRafa</title>
         <link rel="stylesheet" href="PHPStyle.css">
 
         <?php
@@ -30,7 +30,7 @@
             if($p=='') {
                 $HomeClassLink = "link-selected";
                 echo <<< EOT
-                    <h1>PHP <i style="background-color:#777BB3" class="fa-brands fa-php"></i></h1>
+                    <h1>PHP PROJECTS <i style="background-color:#777BB3" class="fa-brands fa-php"></i></h1>
                     <p class="DefaultText">&emsp;PHP studies.</p>
                 EOT;
             }
@@ -64,8 +64,8 @@
                     </div>
                     <div class="left-column-layout">
                         <ul>
-                            <a class="$HomeClassLink" href="/PHP.php"><li>Home</li></a>
-                            <a class="$APIsClassLink" href="/PHP.php?p=APIs"><li>APIs</li></a>
+                            <a class="$HomeClassLink" href="/PHPProjects.php"><li>Home</li></a>
+                            <a class="$APIsClassLink" href="/PHPProjects.php?p=APIs"><li>APIs</li></a>
                         </ul>
                     </div>
                 </div>

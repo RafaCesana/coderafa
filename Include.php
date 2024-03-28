@@ -46,8 +46,8 @@
                     <div class="nav-links">
                         <div><a class="left-to-right" href="About.php">ABOUT</a></div>
                         <div><a class="left-to-right" href="CSSTricks.php">CSS TRICKS</a></div>
-                        <div><a class="left-to-right" href="">JAVASCRIPT</a></div>
-                        <div><a class="left-to-right" href="PHP.php">PHP</a></div>
+                        <div><a class="left-to-right" href="JavascriptProjects.php">JAVASCRIPT</a></div>
+                        <div><a class="left-to-right" href="PHPProjects.php">PHP</a></div>
                         <div><a class="left-to-right" href="">CONTACT</a></div>
                         <div><a onclick="ToggleColorTheme();" id="toggle-colortheme-icon" class="toggle-colortheme-icon"><i style="font-size:24px;" class="fa-solid fa-toggle-off"></i></a></div>
                     </div>
@@ -61,8 +61,8 @@
                         <ul>
                             <a href="About.php"><li>About</li></a>
                             <a href="CSSTricks.php"><li>CSS</li></a>
-                            <a href=""><li>JS</li></a>
-                            <a href=""><li>PHP</li></a>
+                            <a href="JavascriptProjects.php"><li>JS</li></a>
+                            <a href="PHPProjects.php"><li>PHP</li></a>
                             <a href=""><li>Contact</li></a>
                             <a onclick="ToggleColorTheme();" id="toggle-colortheme-icon"><li><i style="font-size:24px;" class="fa-solid fa-toggle-off"></i></li></a>
                         </ul>
@@ -113,19 +113,35 @@
         echo $R;
     }
 
-    function GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode) {
+    function GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, $Orientation) {
+
+        // CSS Classes
+        if($Orientation=='vertical') {
+            $ExecCodeContainerClass  = 'exec-code-container-vertical';
+            $ExecContainerClass      = 'exec-container-vertical';
+            $CodeContainerClass      = 'code-container-vertical';
+            $ExecBackgroundClass     = 'exec-background-vertical';
+            $CodeBackgroundClass     = 'code-background-vertical';
+        }
+        if($Orientation=='horizontal') {
+            $ExecCodeContainerClass  = 'exec-code-container-horizontal';
+            $ExecContainerClass      = 'exec-container-horizontal';
+            $CodeContainerClass      = 'code-container-horizontal';
+            $ExecBackgroundClass     = 'exec-background-horizontal';
+            $CodeBackgroundClass     = 'code-background-horizontal';
+        }
 
         // First part of html code
         echo <<< EOT
             <!-- Exec-Code -->
-            <div class="exec-code-container">
-                <div class="exec-container">
-                    <div class="exec-background">
+            <div class="$ExecCodeContainerClass">
+                <div class="$ExecContainerClass">
+                    <div class="$ExecBackgroundClass">
                         $Exec
                     </div>
                 </div>
-                <div class="code-container">
-                    <div class="code-background" id="CodeContainer">
+                <div class="$CodeContainerClass">
+                    <div class="$CodeBackgroundClass" id="CodeContainer">
         EOT;
 
         // Code implementation part   

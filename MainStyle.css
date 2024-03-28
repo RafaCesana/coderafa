@@ -362,11 +362,11 @@ div.right-column-layout {
 }
 
 @media (any-pointer: coarse) {
-    .two-columns-layout-container {
+    div.two-columns-layout-container {
         display: flex;
         flex-direction: column;
     }
-    .left-column-layout {
+    div.left-column-layout {
         width: 100%;
         height: auto;
         overflow-y: auto;
@@ -384,7 +384,7 @@ div.right-column-layout {
         margin-bottom: 0;
         width: 172px;
     }
-    .right-column-layout {
+    div.right-column-layout {
         width: 100%;
         padding: 100px 10px 100px 10px;
     }
@@ -392,20 +392,21 @@ div.right-column-layout {
 
 
 /* ------------- Exec-Code ------------- */
-.exec-code-container {
+/*Vertical*/
+.exec-code-container-vertical {
     display: flex;
     margin: 20px 0;
     box-shadow: 60px -16px #737373;
     border-radius: 4px 4px 0px 4px;
 }
-.exec-container,
-.code-container {
+.exec-container-vertical ,
+.code-container-vertical {
     width: 50%;
     justify-content: center;
     display: flex;
     position: relative;
 }
-.exec-background {
+.exec-background-vertical {
     background-color: #fff;
     width: 100%;
     padding: 20px;
@@ -416,11 +417,45 @@ div.right-column-layout {
     justify-content: center;
     align-items: center;
 }
-.code-background {
+.code-background-vertical {
     background-color: var(--BackgroundCode);
     width: 100%;
     padding: 20px;
     max-height: 300px;
+    overflow-y: auto;
+    color: #00c400;
+    border-radius: 0px 4px 4px 0px;
+}
+/*Horizontal*/
+.exec-code-container-horizontal {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    box-shadow: 60px -16px #737373;
+    border-radius: 4px 4px 0px 4px;
+}
+.exec-container-horizontal ,
+.code-container-horizontal {
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+.exec-background-horizontal {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    max-height: 350px;
+    overflow-y: auto;
+    border-radius: 4px 0px 0px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.code-background-horizontal {
+    background-color: var(--BackgroundCode);
+    width: 100%;
+    padding: 20px;
+    max-height: 190px;
     overflow-y: auto;
     color: #00c400;
     border-radius: 0px 4px 4px 0px;
@@ -447,15 +482,17 @@ div.buttons-code-container {
 }
 
 @media (any-pointer: coarse) {
-    .exec-code-container {
+    .exec-code-container-vertical {
         flex-direction: column;
     }
-    .exec-container,
-    .code-container {
+    .exec-container-vertical,
+    .code-container-vertical {
         width: 100%;
     }
-    .code-background,
-    .exec-background {
+    .code-background-vertical,
+    .exec-background-vertical,
+    .code-background-horizontal,
+    .code-background-horizontal {
         max-height: none;
         overflow-y: none;
     }
