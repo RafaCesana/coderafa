@@ -22,7 +22,7 @@
 
             echo <<< EOT
                 <div class="two-columns-layout-container">       
-                    <div class="right-column-layout">
+                    <div class="right-column-layout vertical-main-containers">
             EOT;
 
             $p = $_GET['p'];
@@ -36,18 +36,15 @@
             }
             if($p=='APIs') {
                 $APIsClassLink = "link-selected";
-                include 'curl.php';
 
                 // Calling API
+                include 'curl.php';
                 $SelectedOption = $_POST['USCities'];
+                if($SelectedOption=='') {
+                    $SelectedOption = 'Orlando';
+                }
                 $aGeocoding = GetGeocoding($SelectedOption);
-
-                $Name       = $aGeocoding[0];
-                $State      = $aGeocoding[1];
-                $Country    = $aGeocoding[2];
-                $Lat        = $aGeocoding[3];
-                $Lon        = $aGeocoding[4];              
-                
+       
                 echo <<< EOT
                     <h1>APIs</h1>
                     <p class="DefaultText">&emsp;APIs calls using cURL.</p>
@@ -55,38 +52,12 @@
                         <h2>1. Geocoding</h2>
                         <p>&emsp;Geocoding API is a simple tool that <a class="on-text" href="https://openweathermap.org/">OpenWeather</a> have developed to ease the search for locations while working with geographic names and coordinates.</p>
                         <div class="GeocodingAPI">
-                            <div>
-                                <div>
-                                    <form method="post" action="PHP.php?p=APIs">
-                                        <label for="USCities">Choose a US city: </label>
-                                        <select name="USCities">
-                                            <option value="Orlando">Orlando</option>
-                                            <option value="Chicago">Chicago</option>
-                                            <option value="Arizona">Arizona</option>
-                                            <option value="SanDiego">SanDiego</option>
-                                        </select>
-                                        <input type="submit" value="Find" name="find">
-                                    </form>
-                                </div>
-                                <div>
-                                    <span style="color:#6f6f6f"><i>$Name, $State, $Country</i></span>
-                                </div>
-                                <div>  
-                                    <table>
-                                        <tr>
-                                            <th>LAT</th>
-                                            <td>$Lat</td>
-                                        </tr>
-                                        <tr>
-                                            <th>LON</th>
-                                            <td>$Lon</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
+                EOT;
+                            GetPHPProjects('API-Geocoding',$aGeocoding);
+                echo <<< EOT
                         </div>
                     </div>
-                    EOT;
+                EOT;
             }
 
             echo <<<EOT
@@ -101,8 +72,5 @@
             EOT;    
         ?>
 
-        <script type="text/javascript">
-                document.getElementById('USCities').value = "<?php echo $_POST['USCities']; ?>";
-        </script>
     </body>
 </html>

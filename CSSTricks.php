@@ -26,7 +26,7 @@
 
             echo <<< EOT
                 <div class="two-columns-layout-container">       
-                    <div class="right-column-layout">
+                    <div class="right-column-layout vertical-main-containers">
             EOT;
 
             $p = $_GET['p'];

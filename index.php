@@ -16,7 +16,7 @@
         ?>
 
         <main>
-            <div class="main-containers">
+            <div class="vertical-main-containers">
                 <div>
                     <div class="intro-container">
                         <div class="intro-container-item">
@@ -33,39 +33,48 @@
                     </div>
                 </div>
                 <div class="main-blocks light">
-                    <div>
+                    <div class="headline">
                         <h2 class="colorfull-1">Geocoding API</h2>
-                        <p>from OpenWheater</p>
+                        <p style="color:#000;" class="DefaultText">Search for coordinates location using Geocoding API from OpenWeather. This project, such as other PHP projects you can find clicking at <a class="on-text" href="PHP.php">PHP page.</a></p>
                     </div>
                     <div>
-                        api response
+                        <?php
+                            // Calling API
+                            include 'curl.php';
+                            $SelectedOption = $_POST['USCities'];
+                            if($SelectedOption=='') {
+                                $SelectedOption = 'Orlando';
+                            }
+                            $aGeocoding = GetGeocoding($SelectedOption);
+                            GetPHPProjects('API-Geocoding',$aGeocoding);
+                        ?>
                     </div>
                 </div>
                 <div class="main-blocks dark">
-                    <div>
-                        <p>CSS list projects</p>
+                    <div class="project">
+                        <p>CSS list projects CSS list projects CSS list projects CSS list projects</p>
                     </div>
-                    <div>
-                        <h2 class="colorfull-1">CSS Tricks</h2>
-                        <p>Different CSS tricks</p>
+                    <div class="headline">
+                        <h2 style="text-align:right;" class="colorfull-1">CSS Tricks</h2>
+                        <p class="DefaultText">Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks</p>
                     </div>
                 </div>
                 <div class="main-blocks light">
-                    <div>
+                    <div class="headline">
                         <h2 class="colorfull-1">FILE.IO API</h2>
-                        <p>Super simple file sharing!</p>
+                        <p style="color:#000;" class="DefaultText">Super simple file sharing! Super simple file sharing! Super simple file sharing! Super simple file sharing! Super simple file sharing! Super simple file sharing! Super simple file sharing!</p>
                     </div>
-                    <div>
-                        upload files
+                    <div class="project">
+                        upload files upload files upload files upload files
                     </div>
                 </div>
                 <div class="main-blocks dark">
-                    <div>
-                        <p>JS list projects</p>
+                    <div class="project">
+                        <p>JS list projects JS list projects JS list projects JS list projects</p>
                     </div>
-                    <div>
-                        <h2 class="colorfull-1">JS Application</h2>
-                        <p>Different JS application</p>
+                    <div class="headline">
+                        <h2 style="text-align:right;" class="colorfull-1">JS PROJECTS</h2>
+                        <p class="DefaultText">Different JS Different JS Different JS projects Different JS projects Different JS projects</p>
                     </div>
                 </div>
             </div>    

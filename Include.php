@@ -80,7 +80,7 @@
     function BuildingContent() {
         $ConstructIcon = '<i style="font-size: 20vw;" class="fa-solid fa-person-digging"></i>';
         echo <<< EOT
-            <div class="building-content">
+            <div class="vertical-main-containers building-content">
                 <h1 style="margin:0;">Still Building Content</h1>
                 $ConstructIcon
             </div>
@@ -158,6 +158,50 @@
                 </div>
             </div>
         EOT; 
+    }
+
+    function GetPHPProjects($Project, $aParams) {
+
+        if($Project == 'API-Geocoding') {
+
+            $Name       = $aParams[0];
+            $State      = $aParams[1];
+            $Country    = $aParams[2];
+            $Lat        = $aParams[3];
+            $Lon        = $aParams[4];
+
+            echo <<< EOT
+                <div>
+                    <div>
+                        <form method="post" action="">
+                            <label for="USCities">Choose a US city: </label>
+                            <select name="USCities">
+                                <option value="Orlando">Orlando</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="SanDiego">SanDiego</option>
+                            </select>
+                            <input type="submit" value="Find" name="find">
+                        </form>
+                    </div>
+                    <div>
+                        <span style="color:#6f6f6f"><i>$Name, $State, $Country</i></span>
+                    </div>
+                    <div>  
+                        <table>
+                            <tr>
+                                <th>LAT</th>
+                                <td>$Lat</td>
+                            </tr>
+                            <tr>
+                                <th>LON</th>
+                                <td>$Lon</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            EOT;
+        }
     }
 
 ?>
