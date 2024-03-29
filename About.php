@@ -38,7 +38,9 @@
                                 <div>
                                     <h1>About the website</h1>
                                     <h2>Every detail is taken into consideration when building this website</h2>
-                                    <p class="DefaultText">&emsp;The entire site was written and continues to be developed taking into account good web design practices based on important principles of layout, composition, balance, colors, typography and other good web design practices learned from the book (Jason's wonderful web design principles Beaird and James George). Good design practices were also taken from the book (UX Design definitive guide with the best UX practices by Will Grant)</p>
+                                    <p class="DefaultText">&emsp;The entire site was written and continues to be developed taking into account good web design practices based on important principles of layout, composition, balance, colors, typography and other good web design practices learned from the book (Jason's wonderful web design principles Beaird and James George). Good design practices were also taken from the book (UX Design definitive guide with the best UX practices by Will Grant).</p>
+                                    <p class="DefaultText">&emsp;Some codes I wrote myself from scratch, and others I learned through some websites with tutorials, so some codes, both in their syntax and logic, may resemble existing codes on the internet. No code was copied and pasted into this website. Regardless of similarity, all code written on this website was understood and written by me. </p>
+                                    <p class="DefaultText">&emsp;Here are some sources from which I got ideas that I wanted to put into practice and put on my website: <a target="_blank" href="https://www.w3schools.com/">w3schools</a>, <a target="_blank" href="https://css-tricks.com/">CSS-Tricks</a>.</p>
                                 </div>
                                 <div>
                                     <h1>Can I find the files of this website?</h1>

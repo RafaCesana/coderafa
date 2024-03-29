@@ -120,6 +120,10 @@ p.DefaultText {
     text-align: justify;
 }
 
+.T {
+    transition: 0.6s ease;
+}
+
 /* Buttons */
 button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -446,7 +450,7 @@ div.right-column-layout {
     padding: 20px;
     max-height: 350px;
     overflow-y: auto;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 4px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -458,7 +462,7 @@ div.right-column-layout {
     max-height: 190px;
     overflow-y: auto;
     color: #00c400;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 4px 4px 4px;
 }
 button.copy-code {
     position: absolute;
@@ -479,6 +483,11 @@ div.buttons-code-container {
     right: 20px;
     display: flex;
     justify-content: end;
+}
+
+/*Classes inside Code Blocks*/
+span.Comment {
+    color: #7b7b7b;
 }
 
 @media (any-pointer: coarse) {
