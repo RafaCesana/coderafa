@@ -109,7 +109,7 @@
             $R .= '<div style="padding-left:'.$Padding.'px;"><button id="button-'.$aContainersIDs[$i].'" onclick="ChangeCode(this.id , \''.$ContainersIDsConcat.'\');" class="'.$ClassName.' T">'.$aTecName[$i].'</button></div>';
         }
         $R .= '</div>';
-        $R .= '<button id="CopyCodeButton" onclick="" class="copy-code T">Copy</button>';
+        //$R .= '<button id="CopyCodeButton" onclick="CopyToClipboard();" class="copy-code T">Copy</button>';
         echo $R;
     }
 

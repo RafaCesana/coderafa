@@ -3,6 +3,9 @@
     <head>
 
         <title>CodeRafa</title>
+        <link rel="stylesheet" href="CSSTricksStyle.css">
+        <link rel="stylesheet" href="JSProjectsStyle.css">
+        <script type="text/javascript" src="JSProjectPack.js"></script>
 
         <?php
             include 'Include.php';
@@ -34,7 +37,7 @@
                 </div>
                 <div class="main-blocks light">
                     <div class="headline">
-                        <h2 class="colorfull-1">Geocoding API</h2>
+                        <h2>Geocoding API</h2>
                         <p style="color:#000;" class="DefaultText">Search for coordinates location using Geocoding API from OpenWeather. This project, such as other PHP projects you can find clicking at <a class="on-text" href="PHP.php">PHP page.</a></p>
                     </div>
                     <div>
@@ -52,16 +55,39 @@
                 </div>
                 <div class="main-blocks dark">
                     <div class="project">
-                        <p>CSS list projects CSS list projects CSS list projects CSS list projects</p>
+                        <div class="slideshow-container">
+                            <div class="my-slides fade" style="display:block;">
+                                <div class="numbertext">1 / 2</div>
+                                    <div class="show-block-container-dark">
+                                        <span class="loader0" style="border: 3px solid #fff; border-bottom-color:transparent;"></span>
+                                    </div>
+                                <div class="text">
+                                    <a href="https://coderafa.com/CSSTricks.php?p=Loading" class="on-text T">See more Loading CSS Tricks</a>
+                                </div>
+                            </div>
+
+                            <div class="my-slides fade">
+                                <div class="numbertext">2 / 2</div>
+                                    <div class="show-block-container-dark">
+                                        xxx
+                                    </div>
+                                <div class="text">
+                                    <a href="https://coderafa.com/CSSTricks.php?p=Switches" class="on-text T">See more Toggle Switches CSS Tricks</a>
+                                </div>
+                            </div>
+
+                            <a class="prev T" onclick="NextSlide(-1)">❮</a>
+                            <a class="next T" onclick="NextSlide(1)">❯</a>
+                        </div>
                     </div>
                     <div class="headline">
-                        <h2 style="text-align:right;" class="colorfull-1">CSS Tricks</h2>
+                        <h2 style="text-align:right;">CSS Tricks</h2>
                         <p class="DefaultText">Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks</p>
                     </div>
                 </div>
                 <div class="main-blocks light">
                     <div class="headline">
-                        <h2 class="colorfull-1">FILE.IO API</h2>
+                        <h2>FILE.IO API</h2>
                         <p style="color:#000;" class="DefaultText">Super simple file sharing! Super simple file sharing! Super simple file sharing! Super simple file sharing! Super simple file sharing! Super simple file sharing! Super simple file sharing!</p>
                     </div>
                     <div class="project">
@@ -73,7 +99,7 @@
                         <p>JS list projects JS list projects JS list projects JS list projects</p>
                     </div>
                     <div class="headline">
-                        <h2 style="text-align:right;" class="colorfull-1">JS PROJECTS</h2>
+                        <h2 style="text-align:right;">JS PROJECTS</h2>
                         <p class="DefaultText">Different JS Different JS Different JS projects Different JS projects Different JS projects</p>
                     </div>
                 </div>
