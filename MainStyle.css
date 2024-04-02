@@ -117,7 +117,8 @@ a.on-text:hover {
 p.DefaultText {
     font-size: 18px;
     color: var(--DefaultTextColor);
-    line-height: 28px;
+    /* line-height should have 1.5x font-size pixels */
+    line-height: 27px;
     text-align: justify;
 }
 
