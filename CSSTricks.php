@@ -46,47 +46,46 @@
 
                 $LoadingClassLink = "link-selected";
 
-                // ---------- Exec-Code Block 1 ------------ //
-
-                $Exec = '<span class="loader0"></span>';
+                // ---------- Exec-Code Block 3 ------------ //
+                $Exec = '<span class="loader2"></span>';
                 $HtmlCode =<<< EOT
-                    &lt;span class="loader0"&gt;&lt;/span&gt;
-
+                &lt;span class="loader2"&gt;&lt;/span&gt;
                 EOT;
                 $HtmlCode = nl2br($HtmlCode);
 
                 $CSSCode =<<< EOT
-                    .loader0 {
-                        &emsp;&emsp; width: 50px;
-                        &emsp;&emsp; height: 50px;
-                        &emsp;&emsp; border: 3px solid #000;
-                        &emsp;&emsp; border-radius: 50%;
-                        &emsp;&emsp; border-bottom-color: transparent;
-                        &emsp;&emsp; animation: rotation 1s linear infinite;
+                    .loader2 {
+                        &emsp;&emsp; color: #000;
+                        &emsp;&emsp; <span class="Comment">/* Must be monospaced */</span>
+                        &emsp;&emsp; font-family: monospace;
+                        &emsp;&emsp; font-size: 30px;
+                        &emsp;&emsp; <span class="Comment">/* I'm clipping and displaying only element width */</span>
+                        &emsp;&emsp; clip-path: inset(0 100% 0 0);
+                        &emsp;&emsp; animation: load 2s steps(11) infinite;
+                    }
+                    .loader2:before {
+                        &emsp;&emsp; content:"Loading...";
                     }
                     
-                    @keyframes rotation {
-                        &emsp;&emsp; 0% {
-                            &emsp;&emsp;&emsp;&emsp; transform: rotate(0deg);
-                            &emsp;&emsp; }
-                        &emsp;&emsp; 100% {
-                            &emsp;&emsp;&emsp;&emsp;transform: rotate(360deg);
-                            &emsp;&emsp; }
+                    @keyframes load
+                    {
+                        &emsp;&emsp; to 
+                        &emsp;&emsp; {
+                            &emsp;&emsp;&emsp;&emsp; <span class="Comment">/* ch unit is defined as the width of character 0 (ch unit works as an exact measurement for monospaced fonts) */</span>
+                            &emsp;&emsp;&emsp;&emsp; clip-path: inset(0 -1ch 0 0);
+                        &emsp;&emsp; }
                     }
-
                 EOT;
                 $CSSCode = nl2br($CSSCode);
 
                 // Get Exec-Code Block
                 $aTecName = array('Html', 'CSS');
                 $aCode = array($HtmlCode, $CSSCode);
-                $aContainersIDs = array('html-loading-0', 'css-loading-0');
+                $aContainersIDs = array('html-loading-2', 'css-loading-2');
 
                 GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, 'vertical');
 
-
                 // ---------- Exec-Code Block 2 ------------ //
-
                 $Exec = '<span class="loader1"></span>';
                 $HtmlCode =<<< EOT
                     &lt;span class="loader1"&gt;&lt;/span&gt;
@@ -138,6 +137,44 @@
                 $aTecName = array('Html', 'CSS');
                 $aCode = array($HtmlCode, $CSSCode);
                 $aContainersIDs = array('html-loading-1', 'css-loading-1');
+
+                GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, 'vertical');
+
+                // ---------- Exec-Code Block 1 ------------ //
+
+                $Exec = '<span class="loader0"></span>';
+                $HtmlCode =<<< EOT
+                    &lt;span class="loader0"&gt;&lt;/span&gt;
+
+                EOT;
+                $HtmlCode = nl2br($HtmlCode);
+
+                $CSSCode =<<< EOT
+                    .loader0 {
+                        &emsp;&emsp; width: 50px;
+                        &emsp;&emsp; height: 50px;
+                        &emsp;&emsp; border: 3px solid #000;
+                        &emsp;&emsp; border-radius: 50%;
+                        &emsp;&emsp; border-bottom-color: transparent;
+                        &emsp;&emsp; animation: rotation 1s linear infinite;
+                    }
+                    
+                    @keyframes rotation {
+                        &emsp;&emsp; 0% {
+                            &emsp;&emsp;&emsp;&emsp; transform: rotate(0deg);
+                            &emsp;&emsp; }
+                        &emsp;&emsp; 100% {
+                            &emsp;&emsp;&emsp;&emsp;transform: rotate(360deg);
+                            &emsp;&emsp; }
+                    }
+
+                EOT;
+                $CSSCode = nl2br($CSSCode);
+
+                // Get Exec-Code Block
+                $aTecName = array('Html', 'CSS');
+                $aCode = array($HtmlCode, $CSSCode);
+                $aContainersIDs = array('html-loading-0', 'css-loading-0');
 
                 GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, 'vertical');
             }

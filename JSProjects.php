@@ -39,8 +39,52 @@
 
                 $CarouselClassLink = "link-selected";
 
-                // ---------------------------------- Exec-Code Block 1 ------------------------------------ //
+                // Main Title
+                echo <<< EOT
+                    <h1>JavaScript Carousels</h1>
+                EOT;
 
+                // ---------------------------------- Exec-Code Block 2 ------------------------------------ //
+                // Title
+                echo <<< EOT
+                    <h2 style="margin-bottom:0;">Products Carousel</h2>
+                    <p class="DefaultText" style="margin-top:4px;">&emsp;Inspired by Nike landing page products carousel</p>
+                EOT;
+                // Exec-Code block
+                $Exec = <<< EOT
+
+                EOT;
+
+                $HtmlCode =<<< EOT
+                    test html
+                EOT;
+                $HtmlCode = nl2br($HtmlCode);
+
+                $CSSCode =<<< EOT
+                    test css
+                EOT;
+                $CSSCode = nl2br($CSSCode);
+
+                $JSCode =<<< EOT
+                    test js
+                EOT;
+                $JSCode = nl2br($JSCode);
+
+                // Get Exec-Code Block
+                $aTecName = array('Html', 'CSS', 'JS');
+                $aCode = array($HtmlCode, $CSSCode, $JSCode);
+                $aContainersIDs = array('html-carousel-1', 'css-carousel-1', 'js-carousel-1');
+
+                GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, 'horizontal');
+
+
+                // ---------------------------------- Exec-Code Block 1 ------------------------------------ //      
+                // Title    
+                echo <<< EOT
+                    <h2 style="margin-bottom:0; border-top:1px solid #565656; padding-top:20px;">Pictures Carousel</h2>
+                    <p class="DefaultText" style="margin-top:4px;">&emsp;One example of pictures carousel</p>
+                EOT;
+                // Exec-Code block
                 $Exec = <<< EOT
                     <div class="slideshow-container">
                         <div class="my-slides fade" style="display:block;">
@@ -207,7 +251,7 @@
                 // Get Exec-Code Block
                 $aTecName = array('Html', 'CSS', 'JS');
                 $aCode = array($HtmlCode, $CSSCode, $JSCode);
-                $aContainersIDs = array('html-loading-0', 'css-loading-0', 'js-loading-0');
+                $aContainersIDs = array('html-carousel-0', 'css-carousel-0', 'js-carousel-0');
 
                 GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, 'horizontal');
             }

@@ -118,7 +118,7 @@ p.DefaultText {
     font-size: 18px;
     color: var(--DefaultTextColor);
     /* line-height should have 1.5x font-size pixels */
-    line-height: 27px;
+    line-height: 1.5em;
     text-align: justify;
 }
 

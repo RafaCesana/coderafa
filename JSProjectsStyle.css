@@ -1,5 +1,5 @@
 
-/* ------------------- CAROUSEL ------------------- */
+/* ------------------- PICTURES CAROUSEL ------------------- */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -79,3 +79,5 @@
         font-size: 11px;
     }
 }
+
+/* ------------------- PRODUCTS CAROUSEL ------------------- */

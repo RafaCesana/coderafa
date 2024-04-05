@@ -17,39 +17,62 @@
 
 
 .loader1 {
-    width: 48px;
+  width: 48px;
   height: 12px;
   background: #000;
   margin-top: 40px;
   position: relative;
 }
 .loader1::after {
-    content: '';
-    border: 15px solid transparent;
-    border-top-color: #000;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 0;
-    animation: bounce 0.4s ease-in-out infinite alternate;
-  }
-  .loader1::before {
-    content: '';
-    width: 15px;
-    height: 20px;
-    background: #000;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 25px;
-    animation: bounce 0.4s ease-in-out infinite alternate;
-  }
+  content: '';
+  border: 15px solid transparent;
+  border-top-color: #000;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  animation: bounce 0.4s ease-in-out infinite alternate;
+}
+.loader1::before {
+  content: '';
+  width: 15px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 25px;
+  animation: bounce 0.4s ease-in-out infinite alternate;
+}
   
-  @keyframes bounce {
-    0% {
-      transform: translate(-50%, 5px);
-    }
-    100% {
-      transform: translate(-50%, -5px);
-    }
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, 5px);
   }
+  100% {
+    transform: translate(-50%, -5px);
+  }
+}
+
+
+.loader2 {
+  color: #000;
+  /* Must be monospaced */
+  font-family: monospace;
+  font-size: 30px;
+  /* I'm clipping and displaying only element width */
+  clip-path: inset(0 100% 0 0);
+  animation: load 2s steps(11) infinite;
+}
+.loader2:before {
+  content:"Loading...";
+}
+
+@keyframes load
+{
+  to 
+  {
+    /* ch unit is defined as the width of character 0 (ch unit works as an exact measurement for monospaced fonts) */
+    clip-path: inset(0 -1ch 0 0);
+  }
+}

@@ -82,7 +82,6 @@
                     </div>
                     <div class="headline">
                         <h2 style="text-align:right;">CSS Tricks</h2>
-                        <p class="DefaultText">Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks Different CSS tricks</p>
                     </div>
                 </div>
                 <div class="main-blocks light">
@@ -100,7 +99,6 @@
                     </div>
                     <div class="headline">
                         <h2 style="text-align:right;">JS PROJECTS</h2>
-                        <p class="DefaultText">Different JS Different JS Different JS projects Different JS projects Different JS projects</p>
                     </div>
                 </div>
             </div>    
