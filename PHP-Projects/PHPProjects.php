@@ -19,6 +19,7 @@
             // Links selection on left-column-layout
             $HomeClassLink = "link-not-selected";
             $APIsClassLink = "link-not-selected";
+            $CrudClassLink = "link-not-selected";
 
             echo <<< EOT
                 <div class="two-columns-layout-container">       
@@ -60,12 +61,18 @@
                 EOT;
             }
 
+            if($p=='crud') {
+                $CrudClassLink = "link-selected";
+                BuildingContent();
+            }
+
             echo <<<EOT
                     </div>
                     <div class="left-column-layout">
                         <ul>
                             <a class="$HomeClassLink" href="/PHPProjects.php"><li>Home</li></a>
                             <a class="$APIsClassLink" href="/PHPProjects.php?p=APIs"><li>APIs</li></a>
+                            <a class="$CrudClassLink" href="/PHPProjects.php?p=crud"><li>CRUD</li></a>
                         </ul>
                     </div>
                 </div>
