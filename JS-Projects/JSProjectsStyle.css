@@ -80,4 +80,43 @@
     }
 }
 
-/* ------------------- PRODUCTS CAROUSEL ------------------- */
+/* ------------------- PRODUCTS SLIDER ------------------- */
+.product-slider-container {
+    color: #000;
+    margin: 0 10%;
+    position: relative;
+}
+.gallery-wrapper {
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.product-block {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+a.right-arrow,
+a.left-arrow {
+    color: #000;
+    position: absolute;
+    font-size: 36px;
+    top: 45%;
+}
+a.right-arrow {
+    right: -4%;
+}
+a.left-arrow {
+    left: -4%;
+}
+

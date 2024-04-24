@@ -22,3 +22,33 @@ function ShowSlide(n) {
     }
     Slides[SlideIndex-1].style.display = "block";
 }
+
+var CurrentItem = 0;
+function Slide(n) {
+    const Items = document.getElementsByClassName('item');
+    const aItems = Array.from(Items);
+    const qtyItems = Items.length;
+
+    CurrentItem = CurrentItem + n;
+
+    // Go back to the first frame
+    if( CurrentItem > (qtyItems - 1) ) {
+        CurrentItem = 0;
+    }
+    // Go back to the last frame
+    if( CurrentItem < 0 ) {
+        CurrentItem = qtyItems - 1;
+    }
+
+    aItems.forEach((Item) => {
+        
+        aItems[CurrentItem].scrollIntoView({
+            inline: "start",
+            block: "nearest",
+            behavior: "smooth"
+        });
+
+    });
+    
+
+}

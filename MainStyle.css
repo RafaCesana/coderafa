@@ -126,6 +126,10 @@ p.DefaultText {
     transition: 0.6s ease;
 }
 
+.Zoom:hover {
+    scale: 1.1;
+}
+
 /* Buttons */
 button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -260,28 +264,17 @@ div.vertical-main-containers {
     flex-direction: column;
 }
 .main-blocks {
-    padding: 40px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.main-blocks .headline {
-    width: 50%;
-}
-.main-blocks .project {
-    width: 30%;
+.TechDrawing {
+    width:10%;
 }
 @media (any-pointer: coarse) {
-    .main-blocks {
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
-    .main-blocks .headline {
-        width: 100%;
-    }
-    .main-blocks .project {
-        width: 100%;
+    .TechDrawing {
+        width:22%;
     }
 }
 

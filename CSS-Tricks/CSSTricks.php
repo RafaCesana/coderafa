@@ -23,6 +23,7 @@
             $AnimatedTextClassLink      = "link-not-selected";
             $FloatingImageClassLink     = "link-not-selected";
             $BoostrapClassLink          = "link-not-selected";
+            $AccessibilityClassLink    = "link-not-selected";
 
             echo <<< EOT
                 <div class="two-columns-layout-container">       
@@ -41,6 +42,75 @@
             if($p=='Switches') {
                 $ToggleSwitchesClassLink = "link-selected";
                 BuildingContent();
+            }
+            if($p=='Accessibility') {
+                $AccessibilityClassLink = "link-selected";
+
+                // Main Title
+                echo <<< EOT
+                    <h1>Accessibility Tricks</h1>
+                    <p class="DefaultText">&emsp;Different solutions for web accessibility</p>
+                EOT;
+
+                // ---------------------------------- Accessible Form ------------------------------------ //
+                echo <<< EOT
+                    <div class="default-layout-container">
+                        <h2>Accessible Forms</h2>
+                        <p>&emsp;Using focus on form inputs</p>
+                        <div style="padding: 20px;">
+                            <div class="accessible-forms-container">
+                                <div style="display:flex;justify-content:center;">
+                                    <form class="accessible-1">
+                                        <div style="padding:10px;">
+                                            <label for="firstname1">First Name</label>
+                                            <input type="text" id="firstname1">
+                                        </div>
+                                        <div style="padding:10px;">
+                                            <label for="lastname1">Last Name</label>
+                                            <input type="text" id="lastname1">
+                                        </div>
+                                        <div style="padding:10px;">
+                                            <label for="message1">Message</label>
+                                            <textarea id="message1"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div style="display:flex;justify-content:center;">
+                                    <form class="accessible-2">
+                                        <div>
+                                            <label for="firstname2">Name</label>
+                                            <input type="text" id="firstname2">
+                                        </div>
+                                        <div>
+                                            <label for="phone2">Phone number</br><span style="font-size:12px;">(XXX.XX.XXXXX.XXXX)</span></label>
+                                            <input type="text" id="phone2">
+                                        </div>
+                                        <div>
+                                            <label for="email2">Your email address <span class="mandatory">*</span></label>
+                                            <input type="email" id="email2" name="email2" required aria-required="true" placeholder="Email" required="" autocomplete="email">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div style="display:flex;justify-content:center;">
+                                    <form class="accessible-3">
+                                        <div style="padding:10px;">
+                                            <label for="firstname3">Username</label>
+                                            <input type="text" id="firstname3">
+                                        </div>
+                                        <div style="padding:10px;">
+                                            <label for="pwd3">Password</label>
+                                            <input id="pwd3" type="password" placeholder="Enter at least 8 characters"></input>
+                                        </div>
+                                        <div style="display:flex; align-items:center;">
+                                            <label for="checkbox3" style="display:inline; padding-bottom:0; padding-right:10px;">I agree</label>
+                                            <input id="checkbox3" type="checkbox"></input>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                EOT;
             }
             if($p=='Loading') {
 
@@ -141,7 +211,6 @@
                 GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, 'vertical');
 
                 // ---------- Exec-Code Block 1 ------------ //
-
                 $Exec = '<span class="loader0"></span>';
                 $HtmlCode =<<< EOT
                     &lt;span class="loader0"&gt;&lt;/span&gt;
@@ -178,7 +247,6 @@
 
                 GetExecCode($aTecName, $aContainersIDs, $Exec, $aCode, 'vertical');
             }
-
             if($p=='AnimatedText') {
                 $AnimatedTextClassLink = "link-selected";
                 BuildingContent();
@@ -198,6 +266,7 @@
                         <ul>
                             <a class="$HomeClassLink" href="/CSSTricks.php"><li>Home</li></a>
                             <a class="$ToggleSwitchesClassLink" href="/CSSTricks.php?p=Switches"><li>Toggle Switches</li></a>
+                            <a class="$AccessibilityClassLink" href="/CSSTricks.php?p=Accessibility"><li>Accessibility</li></a>
                             <a class="$LoadingClassLink" href="/CSSTricks.php?p=Loading"><li>Loading</li></a>
                             <a class="$AnimatedTextClassLink" href="/CSSTricks.php?p=AnimatedText"><li>Animated Text on Hover</li></a>
                             <a class="$FloatingImageClassLink" href="/CSSTricks.php?p=FloatingImage"><li>Floating Image</li></a>

@@ -76,3 +76,78 @@
     clip-path: inset(0 -1ch 0 0);
   }
 }
+
+/* ------------------- ACCESSIBLE FORM ------------------- */
+
+div.accessible-forms-container {
+  display: flex;
+  justify-content:space-around;
+}
+@media (any-pointer: coarse) {
+  div.accessible-forms-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+form.accessible-1 {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #bebebe;
+  border-radius: 4px;
+}
+
+form.accessible-1:focus-within {
+  background-color: #00bf7d;
+  border: 1px solid #00bf7d;
+}
+
+form.accessible-1 label {
+  display: block;
+  color: #000;
+  padding-bottom: 10px;
+}
+form.accessible-1 input:focus-within,
+form.accessible-1 textarea:focus-within {
+  scale: 1.2;
+}
+
+form.accessible-2 {
+  width: 100%;
+  border: 1px solid #00d3af;
+  border-radius: 4px;
+}
+form.accessible-2 label {
+  display: block;
+  color: #000;
+  padding-bottom: 10px;
+}
+form.accessible-2 > div {
+  padding: 20px;
+}
+form.accessible-2 > div:focus-within {
+  background: #00d3af;
+}
+.mandatory {
+  color: red;
+}
+
+form.accessible-3 {
+  width: 100%;
+  background-color: #1368b5;
+  border-radius: 4px;
+  padding: 20px;
+}
+form.accessible-3 label {
+  display: block;
+  color: #fff;
+  padding-bottom: 10px;
+}
+form.accessible-3 input {
+  font-size: 16px;
+  height: 35px;
+}
+form.accessible-3 input[type='checkbox'] {
+  width: 20px;
+  accent-color: #000;
+}
