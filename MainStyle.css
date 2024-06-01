@@ -269,12 +269,16 @@ div.vertical-main-containers {
     justify-content: space-around;
     align-items: center;
 }
-.TechDrawing {
-    width:10%;
+.TechIcon {
+    font-size: 15vh;
+    color: rgba(0, 0, 0, 0.8);
+}
+.TechIcon:hover {
+    color: rgb(254, 179, 38);
 }
 @media (any-pointer: coarse) {
-    .TechDrawing {
-        width:22%;
+    .TechIcon {
+        font-size: 10vh;
     }
 }
 

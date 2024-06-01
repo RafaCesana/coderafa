@@ -35,12 +35,19 @@
                         </div>
                     </div>
                 </div>
-
+                <!--
                 <div class="main-blocks light">
                     <img class="TechDrawing Zoom T" src="html-drawing.png" alt="html lgo draw">
                     <img class="TechDrawing Zoom T" src="css-drawing.png" alt="html lgo draw">
                     <img class="TechDrawing Zoom T" src="js-drawing.png" alt="html lgo draw">
                     <img class="TechDrawing Zoom T" src="php-drawing.png" alt="html lgo draw">
+                </div>
+                -->
+                <div class="main-blocks light">
+                    <i class="fa-brands fa-html5 TechIcon Zoom T"></i>
+                    <i class="fa-brands fa-css3-alt TechIcon Zoom T"></i>
+                    <i class="fa-brands fa-square-js TechIcon Zoom T"></i>
+                    <i class="fa-brands fa-php TechIcon Zoom T"></i>
                 </div>
 
             </div>    

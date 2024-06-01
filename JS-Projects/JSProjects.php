@@ -18,8 +18,9 @@
             //GridSystem();
 
             // Links selection on left-column-layout
-            $HomeClassLink        = "link-not-selected";
-            $CarouselClassLink    = "link-not-selected";
+            $HomeClassLink              = "link-not-selected";
+            $CarouselClassLink          = "link-not-selected";
+            $RunawayButtonClassLink     = "link-not-selected";
 
             echo <<< EOT
                 <div class="two-columns-layout-container">       
@@ -125,6 +126,22 @@
                     </div>
                 EOT;
             }
+            if($p=='RunawayButton') {
+
+                $RunawayButtonClassLink = "link-selected";
+
+                // Main Title
+                echo <<< EOT
+                    <h1>Runaway Button</h1>
+                    <p class="DefaultText">&emsp;Try to click on button.</p>
+                EOT;
+
+                echo <<< EOT
+                    <div class="default-layout-container runaway-button-container">
+                        <button class="runaway-button" onmouseover="Runaway(this);">Click here</button>
+                    </div>
+                EOT;
+            }
 
             echo <<<EOT
                     </div>
@@ -132,6 +149,7 @@
                         <ul>
                             <a class="$HomeClassLink" href="/JSProjects.php"><li>Home</li></a>
                             <a class="$CarouselClassLink" href="/JSProjects.php?p=Carousel"><li>Carousel</li></a>
+                            <a class="$RunawayButtonClassLink" href="/JSProjects.php?p=RunawayButton"><li>Runaway Button</li></a>
                         </ul>
                     </div>
                 </div>

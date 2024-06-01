@@ -120,3 +120,24 @@ a.left-arrow {
     left: -4%;
 }
 
+/* ------------------- RUNAWAY BUTTON ------------------- */
+.runaway-button-container {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    align-items: center;
+}
+.runaway-button {
+    position: relative;
+    background: #5E5DF0;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    border: 0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+}

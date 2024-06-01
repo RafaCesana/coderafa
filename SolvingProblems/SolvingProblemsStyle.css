@@ -1,0 +1,48 @@
+form.SolvingProblems-Form input[type=text] {
+    height: 4vh;
+    margin: 10px;
+    font-size: 17px;
+}
+form.SolvingProblems-Form input[type=submit] {
+    height: 5vh;
+    border-radius: 4px;
+    /* color: #000; */
+    font-size: 16px;
+    background-color: #30638E;
+}
+form.SolvingProblems-Form input[type=submit]:hover {
+    background-color: #378fd7;
+}
+.separator {
+    width: 100%;
+    border: 1px solid #565656;
+}
+.difficulty-level {
+    font-size: 20px;
+    font-weight: normal;
+}
+.easy {
+    color: #4ccb4c;
+}
+.medium {
+    color: #e09d23;
+}
+
+.NumOfIslands {
+    border: none;
+    width: 100%;
+}
+.NumOfIslands tr {
+    display:flex;
+    justify-content: center;
+}
+.NumOfIslands td {
+    display:flex;
+    justify-content:center;
+    border:none;
+}
+.input-NumOfIslands {
+    text-align:center;
+    width: 100%;
+    margin: 0 !important;
+}
