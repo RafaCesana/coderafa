@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
 
-        <title>Solving Problems | CodeRafa</title>
-        <link rel="stylesheet" href="SolvingProblemsStyle.css">
-        <script type="text/javascript" src="SolvingProblems.js"></script>
+        <title>Algorithms | CodeRafa</title>
+        <link rel="stylesheet" href="AlgorithmsStyle.css">
+        <script type="text/javascript" src="Algorithms.js"></script>
 
         <?php
             include 'Include.php';
@@ -32,7 +32,7 @@
             if($p=='') {
                 $HomeClassLink = "link-selected";
                 echo <<< EOT
-                    <h1>SOLVING PROBLEMS <i style="color:#737373;" class="fa-solid fa-gear"></i></h1>
+                    <h1>Algorithms <i style="color:#737373;" class="fa-solid fa-gear"></i></h1>
                     <p class="DefaultText">&emsp;All data processing and input errors were not worked because the focus of this page is solely aimed at solving logic problems. In a software system, this care for the user experience and data processing is important and must be done. So please, for it to work, respect input examples for each exercise.</p>
                 EOT;
             }
@@ -119,9 +119,9 @@
                     </div>
                     <div class="left-column-layout">
                         <ul>
-                            <a class="$HomeClassLink" href="/SolvingProblems.php"><li>Home</li></a>
-                            <a class="$ArraysClassLink" href="/SolvingProblems.php?p=Arrays"><li>Arrays</li></a>
-                            <a class="$ToConvertClassLink" href="/SolvingProblems.php?p=ToConvert"><li>To Convert</li></a>
+                            <a class="$HomeClassLink" href="/Algorithms.php"><li>Home</li></a>
+                            <a class="$ArraysClassLink" href="/Algorithms.php?p=Arrays"><li>Arrays</li></a>
+                            <a class="$ToConvertClassLink" href="/Algorithms.php?p=ToConvert"><li>To Convert</li></a>
                         </ul>
                     </div>
                 </div>

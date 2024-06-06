@@ -49,7 +49,7 @@
                         <div><a class="left-to-right" href="UXUI.php">UX / UI</a></div>
                         <div><a class="left-to-right" href="JSProjects.php">JAVASCRIPT</a></div>
                         <div><a class="left-to-right" href="PHPProjects.php">PHP</a></div>
-                        <div><a class="left-to-right" href="SolvingProblems.php">SOLVING PROBLEMS</a></div>
+                        <div><a class="left-to-right" href="Algorithms.php">ALGORITHMS</a></div>
                         <div><a class="left-to-right" href="">CONTACT</a></div>
                         <div><a onclick="ToggleColorTheme();" id="toggle-colortheme-icon" class="toggle-colortheme-icon"><i style="font-size:24px;" class="fa-solid fa-toggle-off"></i></a></div>
                     </div>
@@ -66,7 +66,7 @@
                             <a href="UXUI.php"><li>UX/UI</li></a>
                             <a href="JSProjects.php"><li>JS</li></a>
                             <a href="PHPProjects.php"><li>PHP</li></a>
-                            <a href="SolvingProblems.php"><li>SOLVING PROBLEMS</li></a>
+                            <a href="Algorithms.php"><li>ALGORITHMS</li></a>
                             <a href=""><li>Contact</li></a>
                             <a onclick="ToggleColorTheme();" id="toggle-colortheme-icon"><li><i style="font-size:24px;" class="fa-solid fa-toggle-off"></i></li></a>
                         </ul>
