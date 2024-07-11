@@ -28,6 +28,11 @@ form.SolvingProblems-Form input[type=submit]:hover {
     color: #e09d23;
 }
 
+input[type=text].vertical-form {
+    display: block;
+    margin-left: 0 !important;
+}
+
 .NumOfIslands {
     border: none;
     width: 100%;
@@ -45,4 +50,13 @@ form.SolvingProblems-Form input[type=submit]:hover {
     text-align:center;
     width: 100%;
     margin: 0 !important;
+}
+
+pre code {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    display: block;
+    padding: 20px;
+    color: #00c400;
+    overflow: auto;
 }

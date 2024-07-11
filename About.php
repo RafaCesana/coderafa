@@ -43,7 +43,7 @@
                                 <div>
                                     <h1>About the website</h1>
                                     <h2>Every detail is taken into consideration when building this website</h2>
-                                    <p class="DefaultText">&emsp; In progress. </p>
+                                    <p class="DefaultText">&emsp; In progress. Books to be listed: Princípios do Web Design Maravilhoso por Jason Beaird e James George. UX Design, Guia Definitivo com as Melhores Práticas de UX por Will Grant. Entendendo Algortitmos, um Guia Ilustrado para Programadores e Outros Curiosos por Aditya Y. Bhargava.</p>
                                     <!--
                                     <p class="DefaultText">&emsp;The entire site was written and continues to be developed taking into account good web design practices based on important principles of layout, composition, balance, colors, typography and other good web design practices learned from the book (Jason's wonderful web design principles Beaird and James George). Good design practices were also taken from the book (UX Design definitive guide with the best UX practices by Will Grant).</p>
                                     <p class="DefaultText">&emsp;Some codes I wrote myself from scratch, and others I learned through some websites with tutorials, so some codes, both in their syntax and logic, may resemble existing codes on the internet. No code was copied and pasted into this website. Regardless of similarity, all code written on this website was understood and written by me. </p>

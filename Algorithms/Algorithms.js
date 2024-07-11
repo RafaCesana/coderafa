@@ -163,3 +163,126 @@ function RomanToInt() {
 }
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
+
+function BinarySearch() {
+    // Inputs
+    const List = document.getElementById('input-BinarySearch-List').value;
+    const aList = List.split(',');
+    aList.sort( (a,b)=>a-b );
+
+    const Item = document.getElementById('input-BinarySearch-Item').value;
+
+    // Algorithm
+    var lowPos = 0;
+    var highPos = aList.length - 1;
+    var middlePos;
+    var guess;
+    var result = 'Null';
+
+    // repeat while it has not yet arrived at a single element
+    while(lowPos<=highPos) {
+        middlePos = Math.round( (lowPos + highPos) / 2 );
+        guess = aList[middlePos];
+        if(guess == Item) {
+            result = middlePos;
+        }
+        if(guess > Item) {
+            highPos = middlePos - 1;
+        }
+        else {
+            lowPos = middlePos + 1;
+        }
+    }
+    
+    var output = result;
+    document.getElementById('output-BinarySearch').innerHTML = output;
+}
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+
+function _findSmallestIndex(arr) {
+    var smallestElement = arr[0];
+    var smallestIndex = 0;
+
+    for(var i=1 ; i<arr.length ; i++) {
+        if( arr[i]<smallestElement ) {
+            smallestElement = arr[i];
+            smallestIndex = i;
+        }
+    }
+    return smallestIndex;
+}
+
+function SelectionSort() {
+    // Inputs
+    const input = document.getElementById('input-SelectionSort').value;
+    // Split converts the string into an array. The map number converts the string array into an array of numbers
+    const arr = input.split(',').map(Number);
+    // Creating a copy of array, because I will remove the smallest one each time and add it into the new array
+    var copyArr = arr.slice();
+    var sortedArr = [];
+
+    for(var i=0 ; i<arr.length ; i++) {
+        var smallestIndex = _findSmallestIndex(copyArr);
+        //Remove element from copyArr at any index (using splice) and add it into sortedArr
+        var element = copyArr.splice(smallestIndex, 1);
+        sortedArr.push(element);
+    }
+    
+    var output = sortedArr;
+    document.getElementById('output-SelectionSort').innerHTML = output;
+}
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+function _sumRecursive(arr) {
+    if( arr.length == 0 ) {
+        return 0;
+    }
+    else {
+        return arr[0] + _sumRecursive( arr.slice(1) );
+    }
+}
+
+function ArraySum() {
+    // Inputs
+    const input = document.getElementById('input-ArraySum').value;
+    // Split converts the string into an array. The map number converts the string array into an array of numbers
+    const arr = input.split(',').map(Number);
+
+    var output = _sumRecursive(arr);
+    document.getElementById('output-ArraySum').innerHTML = output;
+}
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+
+function _countRecursive(arr) {
+    if( arr == 0 ) return 0;
+    return 1 + _countRecursive( arr.slice(1) );
+}
+
+function ArrayCountItems() {
+    // Inputs
+    const input = document.getElementById('input-ArrayCountItems').value;
+    // Split converts the string into an array. The map number converts the string array into an array of numbers
+    const arr = input.split(',');
+
+    var output = _countRecursive(arr);
+    document.getElementById('output-ArrayCountItems').innerHTML = output;
+}
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+function _max(arr) {
+    if(arr.length == 2) return arr[0] > arr[1] ? arr[0] : arr[1];
+    var sub_max = _max( arr.slice(1) );
+    return arr[0] > sub_max ? arr[0] : sub_max;
+}
+
+function ArrayMaxNum() {
+    // Inputs
+    const input = document.getElementById('input-ArrayMaxNum').value;
+    // Split converts the string into an array. The map number converts the string array into an array of numbers
+    const arr = input.split(',').map(Number);
+
+    var output = _max(arr);
+    document.getElementById('output-ArrayMaxNum').innerHTML = output;
+}

@@ -48,6 +48,7 @@
                     <i class="fa-brands fa-css3-alt TechIcon Zoom T"></i>
                     <i class="fa-brands fa-square-js TechIcon Zoom T"></i>
                     <i class="fa-brands fa-php TechIcon Zoom T"></i>
+                    <i class="fa-brands fa-python TechIcon Zoom T"></i>
                 </div>
 
             </div>    
