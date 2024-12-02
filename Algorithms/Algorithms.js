@@ -286,3 +286,32 @@ function ArrayMaxNum() {
     var output = _max(arr);
     document.getElementById('output-ArrayMaxNum').innerHTML = output;
 }
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+function _quicksort(arr)
+{
+    // base-case
+    if(arr.length < 2)
+    {
+        return arr;
+    }
+    else
+    {
+        let pivot = arr[0];
+        // I'm creating a sub-array using filter() method that creates a new array filled with elements that pass a test provided by a function.
+        let less = arr.slice(1).filter( function(el){ return el <= pivot; } );
+        let greater = arr.slice(1).filter( function(el){ return el > pivot; } );
+
+        return _quicksort(less).concat(pivot, _quicksort(greater));
+    }
+}
+
+function Quicksort() {
+    // Inputs
+    const input = document.getElementById('input-Quicksort').value;
+    // Split converts the string into an array. The map number converts the string array into an array of numbers
+    const arr = input.split(',').map(Number);
+
+    var output = _quicksort(arr);
+    document.getElementById('output-Quicksort').innerHTML = output;
+}

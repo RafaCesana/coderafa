@@ -18,7 +18,7 @@ my_list = [1,3,5,7,9]
 print BinarySearch(my_list, 3) #=> 1
 print BinarySearch(my_list, -1) #=> None
 
-    # ------------------------------------------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------------------------------------------------------
 def _findSmallestIndex(arr):
     smallestElement = arr[0]
     smallestIndex = 0
@@ -38,3 +38,17 @@ def SelectionSort(arr):
     return sortedArr
 
 print( SelectionSort([5,3,6,2,10]) )
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+def quicksort(array)
+{
+    # base-case, arrays with 0 or 1 elements are already "sorted".
+    if len(array) < 2:
+        return array
+    else
+        pivot = aray[0]
+        less = [i for i in array[1:] if i<= pivot]
+        greater = [i for i in array[1:] if i > pivot]
+
+        return quicksort(less) + [pivot] + quicksort(greater)
+}

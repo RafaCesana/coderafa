@@ -223,7 +223,38 @@
                         <code>
                             <span style="color: #8c8c8c; font-size:18px;">// JAVASCRIPT</span>
 
+                            function _quicksort(arr)
+                            {
+                                <span style="color: #8c8c8c; font-size:14px;">// base-case</span>
+                                if(arr.length < 2)
+                                {
+                                    return arr;
+                                }
+                                else
+                                {
+                                    let pivot = arr[0];
+                                    <span style="color: #8c8c8c; font-size:14px;">// I'm creating a sub-array using filter() method that creates a new array filled with elements that pass a test provided by a function.</span>
+                                    let less = arr.slice(1).filter( function(el){ return el <= pivot; } );
+                                    let greater = arr.slice(1).filter( function(el){ return el > pivot; } );
+
+                                    return _quicksort(less).concat(pivot, _quicksort(greater));
+                                }
+                            }
+
                             <span style="color: #8c8c8c; font-size:18px;">// PYTHON</span>
+
+                            def quicksort(array)
+                            {
+                                <span style="color: #8c8c8c;"># base-case, arrays with 0 or 1 elements are already "sorted".</span>
+                                if len(array) < 2:
+                                    return array
+                                else
+                                    pivot = aray[0]
+                                    less = [i for i in array[1:] if i<= pivot]
+                                    greater = [i for i in array[1:] if i > pivot]
+
+                                    return quicksort(less) + [pivot] + quicksort(greater)
+                            }
                         </code>
                     </pre>
 

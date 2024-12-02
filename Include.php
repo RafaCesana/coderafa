@@ -50,7 +50,7 @@
                         <div><a class="left-to-right" href="JSProjects.php">JAVASCRIPT</a></div>
                         <div><a class="left-to-right" href="PHPProjects.php">PHP</a></div>
                         <div><a class="left-to-right" href="Algorithms.php">ALGORITHMS</a></div>
-                        <div><a class="left-to-right" href="">CONTACT</a></div>
+                        <div><a class="left-to-right" href="test.php">test</a></div>
                         <div><a onclick="ToggleColorTheme();" id="toggle-colortheme-icon" class="toggle-colortheme-icon"><i style="font-size:24px;" class="fa-solid fa-toggle-off"></i></a></div>
                     </div>
 
